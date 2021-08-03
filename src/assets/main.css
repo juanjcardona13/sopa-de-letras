@@ -1,0 +1,454 @@
+html {
+  height:100%
+}
+body {
+  height:100%;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-size: .94rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5a5c5f;
+  text-align: left;
+  background-color: #fff;
+}
+
+.card {
+  box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+  border-width: 2px;
+  transition: all .2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(26,54,126,.125);
+  border-radius: .25rem;
+  margin: 8px;
+}
+
+#app {
+  height:100%;
+  background: #f1f4f6;
+}
+
+
+
+/*ALINEAR (IZQUIERDA EN X) &  (ARRIBA EN Y)*/
+.align-l-t {
+  justify-content: flex-start;;
+  align-items: flex-start;
+  display: flex;
+}
+
+/*ALINEAR (IZQUIERDA EN X) &  (CENTRO EN Y)*/
+.align-l-c {
+  justify-content: flex-start;;
+  align-items: center;
+  display: flex;
+}
+
+/*ALINEAR (IZQUIERDA EN X) &  (ABAJO EN Y)*/
+.align-l-b {
+  justify-content: flex-start;;
+  align-items: flex-end;
+  display: flex;
+}
+
+/*ALINEAR (CENTRO EN X) &  (ARRIBA EN Y)*/
+.align-c-t {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+/*ALINEAR (CENTRO EN X) &  (CENTRO EN Y)*/
+.align-c-c {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*ALINEAR (CENTRO EN X) &  (ABAJO EN Y)*/
+.align-c-b {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+/*ALINEAR (DERECHA EN X) &  (ARRIBA EN Y)*/
+.align-r-t {
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+}
+
+/*ALINEAR (DERECHA EN X) &  (CENTRO EN Y)*/
+.align-r-c {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+/*ALINEAR (DERECHA EN X) &  (ABAJO EN Y)*/
+.align-r-b {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+
+.fila {
+  display: flex; 
+  flex-wrap: wrap
+}
+.col-10 {
+  flex: 0 0 10%; 
+  max-width: 10%; 
+  position: relative
+}
+.col-20 {
+  flex: 0 0 20%; 
+  max-width: 20%; 
+  position: relative
+}
+.col-30 {
+  flex: 0 0 30%; 
+  max-width: 30%; 
+  position: relative
+}
+.col-40 {
+  flex: 0 0 40%; 
+  max-width: 40%; 
+  position: relative
+}
+.col-50 {
+  flex: 0 0 50%; 
+  max-width: 50%; 
+  position: relative
+}
+.col-60 {
+  flex: 0 0 60%; 
+  max-width: 60%; 
+  position: relative
+}
+.col-60 {
+  flex: 0 0 60%; 
+  max-width: 60%; 
+  position: relative
+}
+.col-70 {
+  flex: 0 0 70%; 
+  max-width: 70%; 
+  position: relative
+}
+.col-80 {
+  flex: 0 0 80%; 
+  max-width: 80%; 
+  position: relative
+}
+.col-90 {
+  flex: 0 0 90%; 
+  max-width: 90%; 
+  position: relative
+}
+.col-100 {
+  flex: 0 0 100%; 
+  max-width: 100%; 
+  position: relative
+}
+
+
+/*xs*/
+@media (min-width: 1px) and (max-width: 576px) {
+  .col-xs-10 {
+    flex: 0 0 10%; 
+    max-width: 10%; 
+    position: relative
+  }
+  .col-xs-20 {
+    flex: 0 0 20%; 
+    max-width: 20%; 
+    position: relative
+  }
+  .col-xs-30 {
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    position: relative
+  }
+  .col-xs-40 {
+    flex: 0 0 40%; 
+    max-width: 40%; 
+    position: relative
+  }
+  .col-xs-50 {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    position: relative
+  }
+  .col-xs-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-xs-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-xs-70 {
+    flex: 0 0 70%; 
+    max-width: 70%; 
+    position: relative
+  }
+  .col-xs-80 {
+    flex: 0 0 80%; 
+    max-width: 80%; 
+    position: relative
+  }
+  .col-xs-90 {
+    flex: 0 0 90%; 
+    max-width: 90%; 
+    position: relative
+  }
+  .col-xs-100 {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    position: relative
+  }
+}
+/*sm*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .col-sm-10 {
+    flex: 0 0 10%; 
+    max-width: 10%; 
+    position: relative
+  }
+  .col-sm-20 {
+    flex: 0 0 20%; 
+    max-width: 20%; 
+    position: relative
+  }
+  .col-sm-30 {
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    position: relative
+  }
+  .col-sm-40 {
+    flex: 0 0 40%; 
+    max-width: 40%; 
+    position: relative
+  }
+  .col-sm-50 {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    position: relative
+  }
+  .col-sm-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-sm-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-sm-70 {
+    flex: 0 0 70%; 
+    max-width: 70%; 
+    position: relative
+  }
+  .col-sm-80 {
+    flex: 0 0 80%; 
+    max-width: 80%; 
+    position: relative
+  }
+  .col-sm-90 {
+    flex: 0 0 90%; 
+    max-width: 90%; 
+    position: relative
+  }
+  .col-sm-100 {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    position: relative
+  }
+}
+/*md*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-10 {
+    flex: 0 0 10%; 
+    max-width: 10%; 
+    position: relative
+  }
+  .col-md-20 {
+    flex: 0 0 20%; 
+    max-width: 20%; 
+    position: relative
+  }
+  .col-md-30 {
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    position: relative
+  }
+  .col-md-40 {
+    flex: 0 0 40%; 
+    max-width: 40%; 
+    position: relative
+  }
+  .col-md-50 {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    position: relative
+  }
+  .col-md-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-md-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-md-70 {
+    flex: 0 0 70%; 
+    max-width: 70%; 
+    position: relative
+  }
+  .col-md-80 {
+    flex: 0 0 80%; 
+    max-width: 80%; 
+    position: relative
+  }
+  .col-md-90 {
+    flex: 0 0 90%; 
+    max-width: 90%; 
+    position: relative
+  }
+  .col-md-100 {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    position: relative
+  }
+}
+/*lg*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .col-lg-10 {
+    flex: 0 0 10%; 
+    max-width: 10%; 
+    position: relative
+  }
+  .col-lg-20 {
+    flex: 0 0 20%; 
+    max-width: 20%; 
+    position: relative
+  }
+  .col-lg-30 {
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    position: relative
+  }
+  .col-lg-40 {
+    flex: 0 0 40%; 
+    max-width: 40%; 
+    position: relative
+  }
+  .col-lg-50 {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    position: relative
+  }
+  .col-lg-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-lg-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-lg-70 {
+    flex: 0 0 70%; 
+    max-width: 70%; 
+    position: relative
+  }
+  .col-lg-80 {
+    flex: 0 0 80%; 
+    max-width: 80%; 
+    position: relative
+  }
+  .col-lg-90 {
+    flex: 0 0 90%; 
+    max-width: 90%; 
+    position: relative
+  }
+  .col-lg-100 {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    position: relative
+  }
+}
+/*xl*/
+@media (min-width: 1200px) and (max-width: 7000px) {
+  .col-xl-10 {
+    flex: 0 0 10%; 
+    max-width: 10%; 
+    position: relative
+  }
+  .col-xl-20 {
+    flex: 0 0 20%; 
+    max-width: 20%; 
+    position: relative
+  }
+  .col-xl-30 {
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    position: relative
+  }
+  .col-xl-40 {
+    flex: 0 0 40%; 
+    max-width: 40%; 
+    position: relative
+  }
+  .col-xl-50 {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    position: relative
+  }
+  .col-xl-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-xl-60 {
+    flex: 0 0 60%; 
+    max-width: 60%; 
+    position: relative
+  }
+  .col-xl-70 {
+    flex: 0 0 70%; 
+    max-width: 70%; 
+    position: relative
+  }
+  .col-xl-80 {
+    flex: 0 0 80%; 
+    max-width: 80%; 
+    position: relative
+  }
+  .col-xl-90 {
+    flex: 0 0 90%; 
+    max-width: 90%; 
+    position: relative
+  }
+  .col-xl-100 {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    position: relative
+  }
+}
+
+
